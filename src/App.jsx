@@ -3,15 +3,16 @@ import axios from "axios";
 
 const API_KEY = import.meta.env.VITE_APIKEY;
 const API_URL = "https://api.thecatapi.com/v1/images/search";
+const BACKUP_IMG =
+	"https://static.vecteezy.com/system/resources/previews/004/639/366/original/error-404-not-found-text-design-vector.jpg";
 
 const Attribute = ({ data }) => {
 	return <div className="font-bold p-2 rounded-md">{data}</div>;
 };
 
 function App() {
-	const [catImage, setCatImage] = useState("");
-	const [banList, setBanList] = useState([]);
-	const [breeds, setBreeds] = useState({});
+	const [image, setImage] = useState(BACKUP_IMG);
+	const [breed, setBreed] = useState([{}]);
 
 	useEffect(() => {
 		fetchCatImage();
@@ -22,23 +23,42 @@ function App() {
 			const response = await axios.get(`${API_URL}?limit=1&has_breeds=1&api_key=${API_KEY}`);
 			const data = response.data[0];
 			const imageUrl = data.url;
-			const breedData = data.breeds[0];
-			setCatImage(imageUrl);
-			setBreeds(breedData);
-			console.log(data);
+			const breeds = data.breeds;
+			setImage(imageUrl);
+			setBreed(breeds);
+			console.log(breed);
 		} catch (error) {
 			console.log(error);
-			setCatImage(null);
-			setBreeds([{}]);
+			setImage(BACKUP_IMG);
+			setBreed([{}]);
 		}
 	};
 
-	const handleBanAttribute = (attribute) => {
-		setBanList([...banList, attribute]);
-	};
-
 	return (
-		
+		<>
+			<header id="header">
+				<h1>Veni Vici!</h1>
+			</header>
+			<main>
+				<section className="max-w-[400px] min-h-[400px] flex justify-center items-center">
+					<img src={image} alt="image of cat" width="100%" height="100%" />
+				</section>
+				<section className="flex gap-5">
+					<div>
+						<h3>Origin</h3>
+						<p>{breed[0].origin}</p>
+					</div>
+					<div>
+						<h3>Grooming</h3>
+						<p>{breed[0].grooming}</p>
+					</div>
+					<div>
+						<h3>Health Issues</h3>
+						<p>{breed[0].health_issues}</p>
+					</div>
+				</section>
+			</main>
+		</>
 	);
 }
 
