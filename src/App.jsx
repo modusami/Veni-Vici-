@@ -39,19 +39,17 @@ function App() {
 				<section className="max-w-[400px] min-h-[400px] flex justify-center items-center">
 					<img src={image} alt="image of cat" width="100%" height="100%" />
 				</section>
-				<section className="flex gap-5">
-					<div>
-						<h3>Origin</h3>
-						<p>{breed[0].origin}</p>
-					</div>
-					<div>
-						<h3>Grooming</h3>
-						<p>{breed[0].grooming}</p>
-					</div>
-					<div>
+				{breed ? (
+					<section className="flex gap-5">
+						<Attribute title="Origin" data={breed[0].origin} />
+
+						<Attribute title="Grooming" data={breed[0].grooming} />
+
 						<Attribute title="Health Issues" data={breed[0].health_issues} />
-					</div>
-				</section>
+					</section>
+				) : (
+					<h3>No Breeds Yet</h3>
+				)}
 			</main>
 		</>
 	);
