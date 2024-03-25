@@ -10,27 +10,27 @@ Time spent: **3hr** hours spent in total
 
 The following **required** functionality is completed:
 
--   [ ] **Clicking a button creates a new API fetch request and displays at least three attributes from the returned JSON data**
--   [ ] **Only one item/API call is viewable at a time**
--   [ ] **API calls appear random to the user**
--   [ ] **At least one image is displayed per API call**
--   [ ] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
--   [ ] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+-   [DONE] **Clicking a button creates a new API fetch request and displays at least three attributes from the returned JSON data**
+-   [DONE] **Only one item/API call is viewable at a time**
+-   [DONE] **API calls appear random to the user**
+-   [DONE] **At least one image is displayed per API call**
+-   [DONE] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+-   [DONE] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
 The following **optional** features are implemented:
 
--   [ ] Multiple types of attributes can be added to the ban list
+-   [DONE] Multiple types of attributes can be added to the ban list
 -   [ ] Users can see a stored history of their previously viewed items from their session
 
 The following **additional** features are implemented:
 
--   [ ] List anything else that you added to improve the site's functionality!
+-   [DONE] If image is not found, set image to a backup image
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='/submission.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='/submisson.gif' title='Video Walkthrough'  alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 
