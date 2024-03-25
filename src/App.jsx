@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import Attribute from "./components/Attribute";
 const API_KEY = import.meta.env.VITE_APIKEY;
 const API_URL = "https://api.thecatapi.com/v1/images/search";
 const BACKUP_IMG =
 	"https://static.vecteezy.com/system/resources/previews/004/639/366/original/error-404-not-found-text-design-vector.jpg";
-
-const Attribute = ({ data }) => {
-	return <div className="font-bold p-2 rounded-md">{data}</div>;
-};
 
 function App() {
 	const [image, setImage] = useState(BACKUP_IMG);
@@ -53,8 +49,7 @@ function App() {
 						<p>{breed[0].grooming}</p>
 					</div>
 					<div>
-						<h3>Health Issues</h3>
-						<p>{breed[0].health_issues}</p>
+						<Attribute title="Health Issues" data={breed[0].health_issues} />
 					</div>
 				</section>
 			</main>
