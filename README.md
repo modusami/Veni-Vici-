@@ -4,7 +4,7 @@ Submitted by: **Michael-Andre Odusami**
 
 This web app: **allows users to discover cats by clicking through random attributes. The web app will display one element at a time with information through API calls in a random fashion.**
 
-Time spent: \*_3hr_ hours spent in total
+Time spent: **3hr hours spent in total**
 
 ## Required Features
 
@@ -14,12 +14,12 @@ The following **required** functionality is completed:
 -   [✅] **Only one item/API call is viewable at a time**
 -   [✅] **API calls appear random to the user**
 -   [✅] **At least one image is displayed per API call**
--   [ ] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
--   [ ] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+-   [✅] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+-   [✅] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
 The following **optional** features are implemented:
 
--   [ ] Multiple types of attributes can be added to the ban list
+-   [✅] Multiple types of attributes can be added to the ban list
 -   [ ] Users can see a stored history of their previously viewed items from their session
 
 The following **additional** features are implemented:
@@ -28,12 +28,6 @@ The following **additional** features are implemented:
 -   [✅] If no breeds are available, display a no breeds yet message
 
 ## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
 
 GIF created with ...
 
