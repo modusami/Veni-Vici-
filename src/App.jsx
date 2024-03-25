@@ -50,6 +50,15 @@ function App() {
 				) : (
 					<h3>No Breeds Yet</h3>
 				)}
+				<section>
+					<button
+						onClick={(e) => fetchCatImage()}
+						type="button"
+						className="border-8 p-3 outline-none"
+					>
+						Get New Cat!
+					</button>
+				</section>
 			</main>
 		</>
 	);

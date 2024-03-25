@@ -10,10 +10,10 @@ Time spent: \*_3hr_ hours spent in total
 
 The following **required** functionality is completed:
 
--   [⏳ ] **Clicking a button creates a new API fetch request and displays at least three attributes from the returned JSON data**
--   [⏳] **Only one item/API call is viewable at a time**
--   [⏳] **API calls appear random to the user**
--   [⏳] **At least one image is displayed per API call**
+-   [✅] **Clicking a button creates a new API fetch request and displays at least three attributes from the returned JSON data**
+-   [✅] **Only one item/API call is viewable at a time**
+-   [✅] **API calls appear random to the user**
+-   [✅] **At least one image is displayed per API call**
 -   [ ] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
 -   [ ] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
@@ -24,7 +24,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
--   [ ] List anything else that you added to improve the site's functionality!
+-   [✅] If image is not found, display a error image in replacement
+-   [✅] If no breeds are available, display a no breeds yet message
 
 ## Video Walkthrough
 
