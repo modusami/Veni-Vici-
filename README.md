@@ -4,37 +4,37 @@ Submitted by: **Michael-Andre Odusami**
 
 This web app: **allows users to discover cats by clicking through random attributes. The web app will display one element at a time with information through API calls in a random fashion.**
 
-Time spent: **3hr hours spent in total**
+Time spent: **3hr** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
--   [✅] **Clicking a button creates a new API fetch request and displays at least three attributes from the returned JSON data**
--   [✅] **Only one item/API call is viewable at a time**
--   [✅] **API calls appear random to the user**
--   [✅] **At least one image is displayed per API call**
--   [✅] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
--   [✅] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+-   [ ] **Clicking a button creates a new API fetch request and displays at least three attributes from the returned JSON data**
+-   [ ] **Only one item/API call is viewable at a time**
+-   [ ] **API calls appear random to the user**
+-   [ ] **At least one image is displayed per API call**
+-   [ ] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+-   [ ] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
 
 The following **optional** features are implemented:
 
--   [✅] Multiple types of attributes can be added to the ban list
+-   [ ] Multiple types of attributes can be added to the ban list
 -   [ ] Users can see a stored history of their previously viewed items from their session
 
 The following **additional** features are implemented:
 
--   [✅] If image is not found, display a error image in replacement
--   [✅] If no breeds are available, display a no breeds yet message
+-   [ ] List anything else that you added to improve the site's functionality!
 
 ## Video Walkthrough
 
-GIF created with ...
+Here's a walkthrough of implemented required features:
 
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+<img src='/submission.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<!-- Replace this with whatever GIF tool you used! -->
+
+GIF created with [Kap](https://getkap.co/) for macOS
 
 ## Notes
 
